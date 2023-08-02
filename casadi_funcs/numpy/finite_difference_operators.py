@@ -1,4 +1,4 @@
-from aerosandbox.numpy.array import array, length
+from casadi_funcs.numpy.array import array, length
 import numpy as _onp
 
 

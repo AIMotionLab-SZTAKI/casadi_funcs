@@ -1,6 +1,6 @@
 import numpy as _onp
 import casadi as _cas
-from aerosandbox.numpy.determine_type import is_casadi_type
+from casadi_funcs.numpy.determine_type import is_casadi_type
 
 
 def linspace(

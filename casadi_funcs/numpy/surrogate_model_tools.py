@@ -1,4 +1,4 @@
-import aerosandbox.numpy as _np
+import casadi_funcs.numpy as _np
 from typing import Tuple, Union
 
 
