@@ -36,6 +36,19 @@ def array(array_like, dtype=None):
         )
 
 
+def asscalar(array):
+    if not is_casadi_type(array, recursive=False):
+        try:
+            return array.item()
+        except TypeError:
+            return None
+
+    else:
+        return array
+
+
+
+
 def concatenate(arrays: Sequence, axis: int = 0):
     """
     Join a sequence of arrays along an existing axis. Returns a NumPy array if possible; if not, returns a CasADi array.
